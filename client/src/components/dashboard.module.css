@@ -1,0 +1,92 @@
+.maindiv {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0);
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+.subdiv2 {
+    display: flex;
+    flex-direction: row;
+
+    gap: 50px;
+}
+
+.nav {
+    height: 50px;
+    align-items: center;
+    display: flex;
+    background: RGB(37, 37, 37) !important;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bamma {
+    height: 200vh;
+    background-color: RGB(77, 16, 34);
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 20px;
+}
+
+.bamma1 {
+    background-color: rgb(37, 37, 37);
+    width: 28vw;
+    min-height: 40px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bamma2 {
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    /* gap: 150px; */
+    width: 28vw;
+    min-height: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    content: "";
+    position: absolute;
+    justify-content: flex-end;
+    padding-left: 50px;
+    width: 26.5vw;
+    top: 340px;
+    height: 20%;
+    background-image: linear-gradient(to bottom, rgba(37, 37, 37, 0), rgba(37, 37, 37, 1));
+}
+
+h4 {
+    margin: 0px;
+}
+
+h2 {
+    margin: 0;
+}
+
+@media (width<768px) {
+    .chat {}
+}
+

@@ -1,0 +1,76 @@
+.input {
+  width: 45vw;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  right: 150px;
+  bottom: 5px;
+  border-radius: 5px;
+  color: white;
+  border: 3px solid #cf0808;
+
+}
+
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 100px;
+  right: 0px;
+
+}
+
+@media (max-width: 768px) {
+  .chatContainer {
+    
+  }
+}
+
+.chatWindow {
+  width: 68vw;
+  height: 80vh;
+  position: relative;
+  left: 0px;
+  bottom: 20px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* margin-left: 250px; */
+  margin-bottom: 10px;
+  align-items: flex-start;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.userMessage {
+  align-self: flex-end;
+  background-color: rgb(37, 37, 37);
+}
+
+.chatbotMessage {
+  align-self: flex-start;
+  background-color: rgb(214, 42, 94);
+  color: white;
+  width: 60vw;
+}
+
+.typingIndicator {
+  background-color: #e10c0c;
+  /* Background color of the typing indicator */
+  padding: 5px 10px;
+  /* Padding around the text */
+  border-radius: 5px;
+  /* Rounded corners */
+  margin-top: 10px;
+  /* Spacing from the chat window */
+  z-index: 5;
+  position: fixed;
+  top: 100px;
+}
